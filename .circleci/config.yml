@@ -8,7 +8,7 @@ jobs:
       - checkout # Checks out the code from your repository
       - run:
           name: Print Hello Roman!
-          command: echo "hello world" # Runs the command to print "hello world"
+          command: echo "hello Roman!" # Runs the command to print "hello world"
 
 workflows:
   my-workflow:
