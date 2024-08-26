@@ -1,0 +1,16 @@
+version: 2.1
+
+jobs:
+  hello-job:
+    docker:
+      - image: cimg/node:17.2.0 # The Docker image used for this job
+    steps:
+      - checkout # Checks out the code from your repository
+      - run:
+          name: Print Hello World
+          command: echo "hello world" # Runs the command to print "hello world"
+
+workflows:
+  my-workflow:
+    jobs:
+      - hello-job
